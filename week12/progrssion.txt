@@ -1,0 +1,48 @@
+ผมให้แชท gen โจทย์มาให้แล้วผมทำตามครับผม
+
+Week 12: DOM + Date/Time Practice
+Scenario
+
+You are creating a simple Booking System Preview page. Users can:
+
+Pick a date/time for a booking.
+
+See if the booking is valid based on open/close hours.
+
+See if the booking overlaps with existing bookings.
+
+Display all dates in local format in the page.
+
+Tasks (to do in JS)
+
+Task 1 – Show Current Date/Time
+
+Display the current date/time in local format on the page.
+
+Update every second.
+
+Task 2 – Booking Input
+
+Create 2 input fields for start and end datetime.
+
+Add a button “Check Booking”.
+
+Task 3 – Validate Booking Hours
+
+Assume system open time: 08:00 → 17:00 (Bangkok time).
+
+When the user clicks “Check Booking”, check if the start and end are within open hours.
+
+Display "Valid Booking" or "Invalid Booking" on the page.
+
+Task 4 – Overlapping Check
+
+Hardcode existing booking: 2025-11-02T09:00 → 2025-11-02T12:00.
+
+When the user clicks “Check Booking”, also check if the new booking overlaps the existing one.
+
+Display "Booking overlaps existing booking" or "No overlap" on the page.
+
+Task 5 – Format Display
+
+Display the booking times formatted in local time (toLocaleString) under the inputs.
