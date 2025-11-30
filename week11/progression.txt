@@ -1,0 +1,75 @@
+ผมให้แชท gen โจทย์มาให้แล้วผมทำตามครับผม
+
+Self-Practice: JavaScript Date/Time
+Task 1: Create Date Objects
+
+Create a Date object for the current time using two different methods.
+
+Create a Date object for your birthday (pick any date) using:
+
+A string in ISO8601 format.
+
+The new Date(year, monthIndex, day, hour, minute, second, millisecond) format.
+
+Check: Print both using console.log().
+
+Task 2: Extract Date Components
+
+Using a Date object (any date you created):
+
+Print the year, month, day of month, day of week, hour, minute, and second using .getFullYear(), .getMonth(), etc.
+
+Notice the month is 0-indexed. Adjust it to show 1–12.
+
+Task 3: UTC vs Local Time
+
+Create a Date object for '2025-12-25T10:00:00+07:00' (local time in Bangkok).
+
+Convert it to UTC using .toISOString().
+
+Print both the local and UTC versions.
+
+Task 4: Formatting Dates
+
+Using toLocaleString():
+
+Display the date in Thai format (th-TH), English (UK) (en-GB), and English (US) (en-US) with Bangkok timezone.
+
+Using Intl.DateTimeFormat:
+
+Display the same date in full date + short time format in Bangkok.
+
+Include weekday and month in long format.
+
+Task 5: Compare Dates
+
+Create two Date objects:
+
+start = '2025-11-02T10:00:00+07:00'
+
+end = '2025-11-02T09:00:00+08:00'
+
+Convert both to UTC and compare them using getTime(). Which is later?
+
+Task 6: Overlapping Time Check
+
+Create two booking periods:
+
+Booking A: 1 Nov 2025 00:00 → 5 Nov 2025 00:00
+
+Booking B: 2 Nov 2025 00:00 → 4 Nov 2025 00:00
+
+Write a function isOverlapping(startA, endA, startB, endB) to check if the periods overlap.
+
+Test your function with the above dates. Print the result.
+
+Task 7: Booking Validation
+
+Assume the system is open: 2 Nov 2025 08:00 → 2 Nov 2025 17:00 (Bangkok time).
+
+A user tries to book 2 Nov 2025 09:00 → 2 Nov 2025 17:00.
+
+Write an if statement to validate if the booking is within the allowed time. Print "Valid Booking" or "Invalid Booking".
+
+✅ Bonus Challenge:
+Detect the user’s system timezone and locale using Intl.DateTimeFormat().resolvedOptions() and print it.
